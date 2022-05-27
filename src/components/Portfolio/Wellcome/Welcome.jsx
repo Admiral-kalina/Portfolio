@@ -3,14 +3,14 @@ import styled, { keyframes } from "styled-components";
 import { IoIosArrowDown } from "react-icons/io";
 
 const Wellcome = () => {
-  // const [flag, setFlag] = useState(false);
-  //
-  // if (!flag) {
-  //   setTimeout(() => {
-  //     setFlag(true);
-  //     console.log(flag);
-  //   }, 2000);
-  // }
+  const [flag, setFlag] = useState(false);
+
+  if (!flag) {
+    setTimeout(() => {
+      setFlag(true);
+      console.log(flag);
+    }, 2000);
+  }
 
 
   return (
@@ -54,8 +54,8 @@ const WellcomeContainer = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  //scroll-snap-align: start;
-  //scroll-snap-stop: normal;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
   font-family: "Baloo", cursive;
   z-index: 6;
   @media (max-width: 1000px) {
